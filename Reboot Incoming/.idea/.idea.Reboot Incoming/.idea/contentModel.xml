@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\asus-pc\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\asus-pc\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Reboot Incoming.-876010902.00" t="ExcludeRecursive" />
-    <e p="D:\3GD 2\Projet\Reboot Incoming" t="IncludeRecursive">
+    <e p="C:\Users\asus-pc\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Reboot Incoming.-1067903762.00" t="ExcludeRecursive" />
+    <e p="D:\3GD 2\Projet\New Repo Chamois\Reboot Incoming" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="FpcVanilla" t="Include">
@@ -28,6 +28,7 @@
             <e p="Patrol.cs" t="Include" />
             <e p="PreyBaseStateMachine.cs" t="Include" />
             <e p="Respawn.cs" t="Include" />
+            <e p="RestOnPoint.cs" t="Include" />
           </e>
         </e>
       </e>

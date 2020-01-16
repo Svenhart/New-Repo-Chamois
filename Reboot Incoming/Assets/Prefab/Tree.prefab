@@ -18,7 +18,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3821783148506028310
 Transform:
@@ -95,7 +95,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8813870009703620482}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 3be43439516f1e54d83ce7dd14fd82df, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 1.4
@@ -137,7 +137,7 @@ Material:
     - _Cutoff: 0.3
     - _SquashAmount: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.8495732, g: 0.8584906, b: 0.75725347, a: 1}
     - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}

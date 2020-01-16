@@ -6,6 +6,8 @@ using UnityEngine.AI;
 namespace StateMachine
 {
 	public class Patrol : PreyBaseStateMachine {
+		
+		private static readonly int Paused = Animator.StringToHash("Paused");
 
 		// OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 		public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
@@ -14,7 +16,7 @@ namespace StateMachine
 			if (agent.hasPath && agent.isStopped==true)
 			{
 				agent.isStopped = false;
-				Debug.Log("Resuming Patrol");
+				Debug.Log(prey.name+" Resuming Patrol");
 			}
 			else
 			{
@@ -28,9 +30,10 @@ namespace StateMachine
 						currentWayPoint = i;
 					}
 				}
-				
+
+				preyAi.currentWayPoint = this.currentWayPoint;
 				agent.SetDestination(this.wayPoints[this.currentWayPoint].transform.position);		
-				Debug.Log("Going to WayPoint "+currentWayPoint);
+				Debug.Log(prey.name+" Going to WayPoint "+currentWayPoint);
 			}
 
 			
@@ -38,16 +41,15 @@ namespace StateMachine
 
 		// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 		public override void  OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-			
-			Debug.Log("has a path "+agent.hasPath);
-			Debug.Log("Is stopped "+agent.isStopped);
 		
-			if(Math.Abs(prey.transform.position.x - wayPoints[currentWayPoint].transform.position.x) < 0.5f && Math.Abs(prey.transform.position.z - wayPoints[currentWayPoint].transform.position.z) < 0.5f)
+			if(Math.Abs(prey.transform.position.x - wayPoints[currentWayPoint].transform.position.x) < 1.5f && Math.Abs(prey.transform.position.z - wayPoints[currentWayPoint].transform.position.z) < 1.5f)
 			{
 				currentWayPoint++;
 				currentWayPoint %= wayPoints.Length;
+				preyAi.currentWayPoint = this.currentWayPoint;
 				agent.SetDestination(this.wayPoints[this.currentWayPoint].transform.position);
-				Debug.Log("Going to WayPoint "+currentWayPoint);
+				Debug.Log(prey.name+" Going to WayPoint "+currentWayPoint);
+				animator.SetTrigger(Paused);
 			}
 		}
 

@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-D:/3GD 2/Projet/Reboot Incoming/Builds/Reboot Incoming.exe
+D:/3GD 2/Projet/New Repo Chamois/Reboot Incoming/Builds/Reboot Incoming.exe
 SceneListBegin?
 Assets/Scenes/SampleScene.unity
 SceneListEnd?
@@ -131,6 +131,7 @@ abcec310145dc41ae6633c2626a03f57 Assembly-CSharp.dll:StateMachine.Flee
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ParticlesTrigger
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
+49101319b21043357cb80c5aba043e1d Unity.Recorder.dll:UnityEngine.Recorder.RecorderBindings
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 1dcb82730d983b77cec736c6ef19f814 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -171,4 +172,5 @@ abcec310145dc41ae6633c2626a03f57 Assembly-CSharp.dll:StateMachine.Patrol
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 df434544c9f7b33d1cc7e635b180d279 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
+abcec310145dc41ae6633c2626a03f57 Assembly-CSharp.dll:StateMachine.RestOnPoint
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
